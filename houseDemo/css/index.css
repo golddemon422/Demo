@@ -1,0 +1,695 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* 头部导航栏*/
+
+#head {
+  width: 100%;
+  height: 7.5em;
+}
+
+.NavigationBox {
+  width: 80%;
+  height: 7.5em;
+  margin: auto;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo h1 {
+  width: 5em;
+  float: left;
+  margin-top: 1.2em;
+}
+
+.Navigation {
+  width: 30em;
+  float: right;
+  margin-top: 3.1em;
+}
+
+.Navigation ul {
+  list-style: none;
+}
+
+.Navigation ul li a:nth-child(1) {
+  margin-left: 0;
+  border-bottom: 0.05em solid #b97e3e;
+  color: #b97e3e;
+}
+
+.Navigation ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: gray;
+  margin-left: 2em;
+  border-bottom: 0.05em solid gray;
+}
+
+.Navigation ul li a:hover {
+  border-bottom: 0.05em solid #b97e3e;
+  transition: all 0.5 linear;
+}
+
+
+/* 轮播图 */
+
+#bannerBox {
+  width: 100%;
+  height: 25.5em;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  height: 25.5em;
+  margin: auto;
+  background-size: cover;
+  transition: all 1s linear;
+}
+
+
+/* 热门房型 */
+
+#room {
+  width: 100%;
+}
+
+.roomBox {
+  width: 80%;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+
+.roomTitle {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.roomTitle p:nth-of-type(2) {
+  color: #666666;
+}
+
+.roomShow ul {
+  list-style: none;
+}
+
+.roomShow ul li {
+  width: 25em;
+  height: 14em;
+  display: inline-block;
+  margin-top: 1em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.roomShow ul li img {
+  width: 25em;
+  height: 14em;
+  transition: all 0.3s linear;
+  transform: scale(1, 1);
+}
+
+.roomShow ul li:nth-of-type(1) p {
+  transition: all 0.3s linear;
+  position: absolute;
+  top: 4.2em;
+  left: 8.5em;
+  color: #ffffff;
+  font-size: 1.2em;
+  opacity: 0;
+}
+
+.roomShow ul li:nth-of-type(2) p {
+  transition: all 0.3s linear;
+  position: absolute;
+  top: 4.3em;
+  left: 8.2em;
+  color: #ffffff;
+  font-size: 1.2em;
+  opacity: 0;
+}
+
+.roomShow ul li:nth-of-type(3) p {
+  transition: all 0.3s linear;
+  position: absolute;
+  top: 4.5em;
+  left: 5.8em;
+  color: #ffffff;
+  font-size: 1.2em;
+  opacity: 0;
+}
+
+.roomShow ul li:nth-of-type(4) p {
+  transition: all 0.3s linear;
+  position: absolute;
+  top: 4.5em;
+  left: 6.8em;
+  color: #ffffff;
+  font-size: 1.2em;
+  opacity: 0;
+}
+
+.roomShow ul li:nth-of-type(5) p {
+  transition: all 0.3s linear;
+  position: absolute;
+  top: 4.5em;
+  left: 7.8em;
+  color: #ffffff;
+  font-size: 1.2em;
+  opacity: 0;
+}
+
+.roomShow ul li:nth-of-type(6) p {
+  transition: all 0.3s linear;
+  position: absolute;
+  top: 4.5em;
+  left: 6.8em;
+  color: #ffffff;
+  font-size: 1.2em;
+  opacity: 0;
+}
+
+.roomShow ul li:nth-of-type(7) p {
+  transition: all 0.3s linear;
+  position: absolute;
+  top: 4.2em;
+  left: 8.5em;
+  color: #ffffff;
+  font-size: 1.2em;
+  opacity: 0;
+}
+
+.roomShow ul li:nth-of-type(8) p {
+  transition: all 0.3s linear;
+  position: absolute;
+  top: 3.5em;
+  left: 6.8em;
+  color: #ffffff;
+  font-size: 1.2em;
+  opacity: 0;
+}
+
+.roomShow ul li:nth-of-type(9) p {
+  transition: all 0.3s linear;
+  position: absolute;
+  top: 4.5em;
+  left: 8.8em;
+  color: #ffffff;
+  font-size: 1.2em;
+  opacity: 0;
+}
+
+.roomShow ul li span {
+  transition: all 0.3s linear;
+  position: absolute;
+  bottom: 0;
+  left: 11em;
+  color: #ffffff;
+  opacity: 0;
+}
+
+
+/* 鼠标Hover事件 */
+
+.roomShow ul li:hover p {
+  opacity: 1;
+}
+
+.roomShow ul li:hover span {
+  position: absolute;
+  bottom: 3.5em;
+  opacity: 1;
+}
+
+.roomShow ul li:hover img {
+  transform: scale(1.1, 1.1);
+}
+
+.roomShow ul li:nth-of-type(1) div {
+  width: 25em;
+  height: 14em;
+  background-color: rgba(38, 31, 24, 0.5);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.roomShow ul li:nth-of-type(1) div p {
+  font-size: 1.2em;
+  line-height: 10em;
+}
+
+.roomShow ul li:nth-of-type(1) div:hover {
+  transition: all 0s linear;
+  opacity: 1;
+}
+
+.roomShow ul li:nth-of-type(2) div {
+  width: 25em;
+  height: 14em;
+  background-color: rgba(38, 31, 24, 0.5);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.roomShow ul li:nth-of-type(2) div p {
+  font-size: 1.2em;
+  line-height: 10em;
+}
+
+.roomShow ul li:nth-of-type(2) div:hover {
+  transition: all 0s linear;
+  opacity: 1;
+}
+
+.roomShow ul li:nth-of-type(3) div {
+  width: 25em;
+  height: 14em;
+  background-color: rgba(38, 31, 24, 0.5);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.roomShow ul li:nth-of-type(3) div p {
+  font-size: 1.2em;
+  line-height: 10em;
+}
+
+.roomShow ul li:nth-of-type(3) div:hover {
+  transition: all 0s linear;
+  opacity: 1;
+}
+
+.roomShow ul li:nth-of-type(4) div {
+  width: 25em;
+  height: 14em;
+  background-color: rgba(38, 31, 24, 0.5);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.roomShow ul li:nth-of-type(4) div p {
+  font-size: 1.2em;
+  line-height: 10em;
+}
+
+.roomShow ul li:nth-of-type(4) div:hover {
+  transition: all 0s linear;
+  opacity: 1;
+}
+
+.roomShow ul li:nth-of-type(5) div {
+  width: 25em;
+  height: 14em;
+  background-color: rgba(38, 31, 24, 0.5);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.roomShow ul li:nth-of-type(5) div p {
+  font-size: 1.2em;
+  line-height: 10em;
+}
+
+.roomShow ul li:nth-of-type(5) div:hover {
+  transition: all 0s linear;
+  opacity: 1;
+}
+
+.roomShow ul li:nth-of-type(6) div {
+  width: 25em;
+  height: 14em;
+  background-color: rgba(38, 31, 24, 0.5);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.roomShow ul li:nth-of-type(6) div p {
+  font-size: 1.2em;
+  line-height: 10em;
+}
+
+.roomShow ul li:nth-of-type(6) div:hover {
+  transition: all 0s linear;
+  opacity: 1;
+}
+
+.roomShow ul li:nth-of-type(7) div {
+  width: 25em;
+  height: 14em;
+  background-color: rgba(38, 31, 24, 0.5);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.roomShow ul li:nth-of-type(7) div p {
+  font-size: 1.2em;
+  line-height: 10em;
+}
+
+.roomShow ul li:nth-of-type(7) div:hover {
+  transition: all 0s linear;
+  opacity: 1;
+}
+
+.roomShow ul li:nth-of-type(8) div {
+  width: 25em;
+  height: 14em;
+  background-color: rgba(38, 31, 24, 0.5);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.roomShow ul li:nth-of-type(8) div p {
+  font-size: 1.2em;
+  line-height: 10em;
+}
+
+.roomShow ul li:nth-of-type(8) div:hover {
+  transition: all 0s linear;
+  opacity: 1;
+}
+
+.roomShow ul li:nth-of-type(9) div {
+  width: 25em;
+  height: 14em;
+  background-color: rgba(38, 31, 24, 0.5);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.roomShow ul li:nth-of-type(9) div p {
+  font-size: 1.2em;
+  line-height: 10em;
+}
+
+.roomShow ul li:nth-of-type(9) div:hover span {
+  transition: transilate;
+  margin-bottom: 2em;
+}
+
+.roomShow ul li:nth-of-type(9) div:hover {
+  transition: all 0s linear;
+  opacity: 1;
+}
+
+.seeMore {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.seeMore p {
+  width: 10em;
+  height: 3em;
+  border: 1px solid gray;
+  margin: 2em auto;
+}
+
+.seeMore a {
+  width: 100%;
+  display: inline-block;
+  color: gray;
+  text-decoration: none;
+  line-height: 3em;
+}
+
+.seeMore p:hover {
+  background-color: #c9c1bc;
+}
+
+
+/* 关于我们 */
+
+#about {
+  width: 100%;
+  height: 53em;
+  position: relative;
+}
+
+.aboutPic {
+  width: 100%;
+  height: 53em;
+  background: url("../image/aboutImg.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position: center top;
+}
+
+.produce {
+  width: 80%;
+  height: 24em;
+  ;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: absolute;
+  bottom: -11.25em;
+  left: 9.3em;
+}
+
+.produceLeft {
+  width: 42%;
+  height: 24em;
+  float: left;
+  text-align: center;
+  line-height: 14em;
+  font-size: 2em;
+  color: #b98b45;
+}
+
+.produceRight {
+  width: 58%;
+  height: 24em;
+  float: right;
+}
+
+.produceRight p:nth-of-type(1) {
+  color: #000000;
+  font-size: 1.5em;
+  line-height: 5em;
+}
+
+.produceRight p:nth-of-type(2) {
+  color: #b3b2b0;
+}
+
+.produceRight button {
+  width: 13em;
+  height: 3.75em;
+  outline: none;
+  border: 0.2em solid #b3b2b0;
+  cursor: pointer;
+  color: #b3b2b0;
+  margin-top: 4.3em;
+}
+
+.produceRight button:hover {
+  background-color: #5a4234;
+  color: #ffffff;
+  transition: all 0.2s linear;
+}
+
+
+/* 用Section清除定位空位 */
+
+#Clear {
+  width: 100%;
+  height: 19em;
+}
+
+
+/* 周边景点 */
+
+#beauty {
+  width: 100%;
+  height: 53em;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+.beautyWords {
+  width: 100%;
+  height: 3em;
+  text-align: center;
+  line-height: 1em;
+  font-size: 1.5em;
+  margin-top: 3.5em;
+}
+
+.beautyWords p:nth-of-type(2) {
+  color: gray;
+}
+
+.beautySport {
+  width: 80%;
+  height: 35em;
+  margin: 0 auto;
+}
+
+.beautySport ul {
+  list-style: none;
+}
+
+.beautySport ul li {
+  width: 23em;
+  height: 15em;
+  display: inline-block;
+  margin-left: 1.5em;
+  margin-top: 1.5em;
+  cursor: pointer;
+}
+
+.beautySport ul li img {
+  width: 23em;
+  height: 15em;
+}
+
+.seeMore {
+  width: 100%;
+  height: 6em;
+  text-align: center;
+  line-height: 3.3em;
+}
+
+.seeMore button {
+  width: 13em;
+  height: 3.75em;
+  outline: none;
+  border: 0.2em solid #b3b2b0;
+  cursor: pointer;
+}
+
+.seeMore button:hover {
+  background-color: #5a4234;
+  color: #ffffff;
+  transition: all 0.2s linear;
+}
+
+
+/* 联系我们 */
+
+#contact {
+  width: 100%;
+  height: 40em;
+}
+
+.contactUs {
+  width: 100%;
+  height: 2em;
+  margin-top: 1.3em;
+  text-align: center;
+  font-size: 3em;
+  color: #737070;
+}
+
+.wordMap {
+  width: 80%;
+  height: 20em;
+  margin: 0 auto;
+}
+
+.wordLeft {
+  width: 50%;
+  height: 20em;
+  float: left;
+  color: #666666;
+}
+
+.wordLeft p {
+  margin-top: 1.2em;
+}
+
+#allmap{
+  width:50%;
+  height: 20em;
+  overflow: hidden;
+  margin: 0;
+}
+.mapRight {
+  width: 50%;
+  height: 20em;
+  float: right;
+  background-color: #000000;
+}
+
+.back {
+  width: 2.2em;
+  height: 2.2em;
+  background-color: #999999;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 2.6em;
+  transition: all 0.3s linear;
+  position: fixed;
+  right: 0.5em;
+  bottom: 5em;
+  display: none;
+}
+
+.back img {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.back:hover {
+  background-color: #333333;
+}
+
+
+/* 页面底部 */
+
+#foot {
+  width: 100%;
+  color: #8e8e8e;
+  border-top: 1px solid #f1f1f1;
+}
+
+.footer {
+  width: 100%;
+  height: 3em;
+}
+
+.footerWord {
+  width: 80%;
+  height: 1.5em;
+  margin: 0 auto;
+  margin-top: 1em;
+  text-align: center;
+}
+
+strong {
+  color: red;
+}
+
+/* 媒体查询器 */
